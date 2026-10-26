@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kadran – Hesap Silme / Account Deletion</title>
+  <meta name="description" content="Kadran hesabını ve verilerini silme. Delete your Kadran account and data.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #eef2f8;
+      --text: #0b1f3a;
+      --muted: #52627a;
+      --accent: #c2410c;
+      --border: #d5dde8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a1628;
+        --surface: #13243d;
+        --text: #e8eef6;
+        --muted: #a3b1c6;
+        --accent: #ff8a3d;
+        --border: #2a3f5f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    header svg { width: 48px; height: 48px; flex: none; border-radius: 12px; }
+    h1 { font-size: 1.6rem; line-height: 1.25; margin: 0; }
+    h2 { font-size: 1.3rem; margin: 40px 0 4px; }
+    h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+    p, ul { margin: 0 0 12px; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); font-size: 0.9rem; }
+    ol { margin: 0 0 12px; padding-left: 20px; }
+    nav { display: flex; gap: 8px; margin: 16px 0 8px; }
+    nav a {
+      padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px;
+      background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600;
+    }
+    .summary {
+      background: var(--surface); border-radius: 12px; padding: 16px; margin: 12px 0 0;
+    }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0 0; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 1024 1024" aria-hidden="true">
+      <rect width="1024" height="1024" fill="#0B1F3A"/>
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M252.2 670 A300 300 0 0 1 724.1 307.9" stroke="#E8EEF6" stroke-width="56"/>
+        <path d="M724.1 307.9 A300 300 0 0 1 771.8 670" stroke="#FF7A1A" stroke-width="56"/>
+        <path d="M512 520 L627 320.8" stroke="#FF7A1A" stroke-width="32"/>
+        <path d="M492 604 L492 828 Q628 828 632 684" stroke="#E8EEF6" stroke-width="38"/>
+        <path d="M448 720 L572 676 M448 774 L572 730" stroke="#E8EEF6" stroke-width="32"/>
+      </g>
+      <circle cx="512" cy="520" r="46" fill="#FF7A1A"/>
+      <circle cx="512" cy="520" r="18" fill="#0B1F3A"/>
+    </svg>
+    <h1>Kadran: Araç Masraf Takibi</h1>
+  </header>
+  <nav aria-label="Dil / Language">
+    <a href="#tr" lang="tr">Türkçe</a>
+    <a href="#en" lang="en">English</a>
+  </nav>
+
+  <section id="tr" lang="tr">
+    <h2>Hesabını ve verilerini silme</h2>
+    <p class="meta">Uygulama: Kadran: Araç Masraf Takibi · Geliştirici: Tork Apps</p>
+    <div class="summary">
+      Hesap açmak isteğe bağlıdır. Giriş yapmadıysan bulutta hiçbir verin yoktur; telefonundaki verileri
+      uygulamayı silerek kaldırabilirsin.
+    </div>
+
+    <h3>1. Uygulamadan (hemen)</h3>
+    <ol>
+      <li>Kadran'ı aç, ana sayfanın sağ üstündeki dişliye dokunarak <strong>Ayarlar</strong>'a gir.</li>
+      <li><strong>Hesap ve eşitleme</strong> bölümünde <strong>Hesabı sil</strong>'e dokun.</li>
+      <li><strong>Kalıcı olarak sil</strong> ile onayla.</li>
+    </ol>
+    <p>Hesabın ve buluttaki tüm verilerin o anda silinir.</p>
+
+    <h3>2. Uygulamaya erişemiyorsan</h3>
+    <p><a href="mailto:torkapps.destek@gmail.com?subject=Kadran%20hesap%20silme">torkapps.destek@gmail.com</a> adresine, Kadran'a giriş
+      yaptığın <strong>Google hesabının e-posta adresinden</strong> “Kadran hesap silme” konulu bir e-posta gönder.
+      Talebin en geç 30 gün içinde işlenir ve sana e-postayla bilgi verilir.</p>
+
+    <h3>Neler silinir?</h3>
+    <ul>
+      <li>Hesabın (Google hesabının e-posta adresi ve adı).</li>
+      <li>Buluttaki tüm kayıtların: araç, giderler, km değerleri, hatırlatmalar ve eşitlenen ayarlar.</li>
+    </ul>
+
+    <h3>Neler kalır?</h3>
+    <ul>
+      <li>Telefonundaki veriler silinmez; uygulamayı kaldırarak ya da uygulama verilerini temizleyerek silebilirsin.</li>
+      <li>Kendin dışa aktardığın yedek, CSV ve PDF dosyaları seçtiğin yerde (ör. Google Drive) kalır.</li>
+      <li>Buluttaki verilerin ayrıca yedeklenmez; silinen veriler geri getirilemez.</li>
+    </ul>
+    <p><a href="index.html">Gizlilik politikası</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h2>Deleting your account and data</h2>
+    <p class="meta">App: Kadran: Araç Masraf Takibi · Developer: Tork Apps</p>
+    <div class="summary">
+      An account is optional. If you never signed in, you have no data in the cloud; you can remove the data on
+      your phone by uninstalling the app.
+    </div>
+
+    <h3>1. In the app (immediately)</h3>
+    <ol>
+      <li>Open Kadran and tap the gear icon at the top right of the home screen to open <strong>Settings</strong>.</li>
+      <li>Under <strong>Hesap ve eşitleme</strong> (Account and sync), tap <strong>Hesabı sil</strong> (Delete account).</li>
+      <li>Confirm with <strong>Kalıcı olarak sil</strong> (Delete permanently).</li>
+    </ol>
+    <p>Your account and all your cloud data are deleted right away.</p>
+
+    <h3>2. If you can't access the app</h3>
+    <p>Email <a href="mailto:torkapps.destek@gmail.com?subject=Kadran%20account%20deletion">torkapps.destek@gmail.com</a> with the subject
+      “Kadran account deletion”, <strong>from the Google account email you signed in with</strong>.
+      Your request is processed within 30 days and you'll get a confirmation by email.</p>
+
+    <h3>What is deleted</h3>
+    <ul>
+      <li>Your account (your Google account's email address and name).</li>
+      <li>All your cloud records: vehicle, expenses, mileage readings, reminders and synced settings.</li>
+    </ul>
+
+    <h3>What is kept</h3>
+    <ul>
+      <li>Data on your phone is not deleted; remove it by uninstalling the app or clearing its data.</li>
+      <li>Backup, CSV and PDF files you exported yourself stay where you saved them (e.g. Google Drive).</li>
+      <li>Cloud data is not backed up separately; deleted data cannot be recovered.</li>
+    </ul>
+    <p><a href="index.html#en">Privacy policy</a></p>
+  </section>
+</main>
+</body>
+</html>
